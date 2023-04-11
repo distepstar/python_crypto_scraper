@@ -1,0 +1,78 @@
+{
+    "symbol": "SOLBUSD",
+    "pair": "SOLBUSD",
+    "contractType": "PERPETUAL",
+    "deliveryDate": 4133404800000,
+    "onboardDate": 1630566000000,
+    "status": "TRADING",
+    "maintMarginPercent": "2.5000",
+    "requiredMarginPercent": "5.0000",
+    "baseAsset": "SOL",
+    "quoteAsset": "BUSD",
+    "marginAsset": "BUSD",
+    "pricePrecision": 4,
+    "quantityPrecision": 0,
+    "baseAssetPrecision": 8,
+    "quotePrecision": 8,
+    "underlyingType": "COIN",
+    "underlyingSubType": [
+        "BUSD"
+    ],
+    "settlePlan": 0,
+    "triggerProtect": "0.0500",
+    "liquidationFee": "0.015000",
+    "marketTakeBound": "0.05",
+    "filters": [
+        {
+            "minPrice": "0.0400",
+            "maxPrice": "100000",
+            "filterType": "PRICE_FILTER",
+            "tickSize": "0.0010"
+        },
+        {
+            "stepSize": "1",
+            "filterType": "LOT_SIZE",
+            "maxQty": "1000000",
+            "minQty": "1"
+        },
+        {
+            "stepSize": "1",
+            "filterType": "MARKET_LOT_SIZE",
+            "maxQty": "1000",
+            "minQty": "1"
+        },
+        {
+            "limit": 200,
+            "filterType": "MAX_NUM_ORDERS"
+        },
+        {
+            "limit": 10,
+            "filterType": "MAX_NUM_ALGO_ORDERS"
+        },
+        {
+            "notional": "5",
+            "filterType": "MIN_NOTIONAL"
+        },
+        {
+            "multiplierDown": "0.9500",
+            "multiplierUp": "1.0500",
+            "multiplierDecimal": "4",
+            "filterType": "PERCENT_PRICE"
+        }
+    ],
+    "orderTypes": [
+        "LIMIT",
+        "MARKET",
+        "STOP",
+        "STOP_MARKET",
+        "TAKE_PROFIT",
+        "TAKE_PROFIT_MARKET",
+        "TRAILING_STOP_MARKET"
+    ],
+    "timeInForce": [
+        "GTC",
+        "IOC",
+        "FOK",
+        "GTX"
+    ]
+}
